@@ -28,3 +28,24 @@ Project 1: https://github.com/engrmansoor304/CricketFanInsights
 
 ### Audience Insights
 ![CricketFanInsights sentiment summary imported into ADSpend IQ](docs/screenshots/audience-insights.png)
+
+## Windows Quick Start
+
+Make sure Python and Git are installed. Open PowerShell and run:
+
+```powershell
+git clone https://github.com/engrmansoor304/ADSpend_IQ.git
+cd .\ADSpend_IQ
+py -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r .\requirements.txt
+.\.venv\Scripts\python.exe .\analyze_ads.py
+.\.venv\Scripts\python.exe -m streamlit run .\dashboard.py --server.port 8503
+```
+
+Open [ADSpend IQ](http://localhost:8503) in your browser. The demo generates
+10,000 synthetic ad records and uses the platform summary to recommend
+how to split a PKR 1,000,000 budget across five advertising platforms.
+
+See [BENCHMARKS.md](BENCHMARKS.md) for the saved results up to 10 million
+rows. To try Audience Insights, upload a sentiment summary CSV exported
+from CricketFanInsights.
