@@ -17,3 +17,14 @@ to suggest ad creative ideas. The budget recommendation will use
 simulated advertising performance.
 
 Project 1: https://github.com/engrmansoor304/CricketFanInsights
+
+## Dashboard screenshots
+
+### Budget Planner
+![Budget allocation across five advertising platforms](docs/screenshots/budget-planner.png)
+
+### Big Data Benchmarks
+![Pandas, local MapReduce, and Spark benchmark results](docs/screenshots/benchmarks.png)
+
+### Audience Insights
+![CricketFanInsights sentiment summary imported into ADSpend IQ](docs/screenshots/audience-insights.png)
