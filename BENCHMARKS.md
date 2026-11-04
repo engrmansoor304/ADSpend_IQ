@@ -7,3 +7,4 @@ Times are from one local run per dataset. Spark startup is measured separately.
 |---:|---:|---:|---:|---:|
 | 10,000 | 0.059 | 0.167 | 6.662 | 15.017 |
 | 100,000 | 0.266 | 1.210 | 7.928 | 14.208 |
+| 1,000,000 | 1.233 | 16.342 | 15.628 | 15.997 |

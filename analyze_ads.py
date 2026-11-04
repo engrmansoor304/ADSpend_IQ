@@ -1,4 +1,4 @@
-﻿from pathlib import Path
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
@@ -18,8 +18,8 @@ PLATFORM_SETTINGS = {
 }
 
 
-def generate_data(row_count):
-    rng = np.random.default_rng(SEED)
+def generate_data(row_count, seed=SEED):
+    rng = np.random.default_rng(seed)
     platforms = rng.choice(list(PLATFORM_SETTINGS), size=row_count)
     rates = np.array([PLATFORM_SETTINGS[name] for name in platforms])
     impressions = rng.integers(500, 15_001, size=row_count)
